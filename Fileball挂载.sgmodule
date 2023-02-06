@@ -15,4 +15,4 @@ force-http-engine-hosts = %APPEND% *.example.com:0
 
 
 [Script]
-3合一挂载 = type=http-request,pattern=^http:\/\/(aliyun|quark|pikpak)\.example\.com,requires-body=1,script-path= https://raw.githubusercontent.com/han3013/my/main/fileball.js?token=GHSAT0AAAAAAB6MTC4A7DYOOAUTHKE6UEMWY7ASMGQ,max-size=0
+3合一挂载 = type=http-request,pattern=^http:\/\/(aliyun|quark|pikpak)\.example\.com,requires-body=1,script-path= https://raw.githubusercontent.com/han3013/my/main/fileball.js,token=GHSAT0AAAAAAB6MTC4A7DYOOAUTHKE6UEMWY7ASMGQ,max-size=0
