@@ -17,3 +17,4 @@ http-response https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/p
 
 [MITM]
 hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
+
