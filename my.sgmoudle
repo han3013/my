@@ -10,10 +10,6 @@ URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
 # BiliBili漫画去广告
 URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.comic\/flash,REJECT
-
-[Map Local]
-
-
 [URL Rewrite]
 # 去除搜索中的大家都在搜
 ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject-dict
@@ -43,15 +39,11 @@ BiliBili_我的页面处理 = type=http-response,pattern=^https?:\/\/app\.bilibi
 bili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-json.js, requires-body=true, timeout=10
 
 bili-proto = type=http-response,pattern=^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js, requires-body=true, binary-body-mode=true, timeout=10
-
 #解锁大会员画质
 BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
-
-nf_rating.js = type=http-request,pattern=^https?:\/\/ios(-.*)?\.prod\.ftl\.netflix\.com\/iosui\/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 #爱企查解锁VIP
 爱企查vip=type=http-response,pattern=^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/aiqicha.js
 http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
-
 #贴吧净化
 贴吧净化 = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0
 贴吧Proto = type=http-response,pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized),requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,script-update-interval=0
@@ -64,9 +56,6 @@ bili自动地区=type=http-response,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.
 
 #显示当前网络信息
 net-info-panel.js=script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Network-Info/Moore/Network-Info.js,type=generic,timeout=30
-
-
-
 [Host]
 ip-api.com = 208.95.112.1
 
@@ -77,7 +66,6 @@ hostname = %APPEND% pan.baidu.com
 hostname = %APPEND% tiebac.baidu.com
 hostname = %APPEND% ap?.bili*i.com, ap?.bili*i.net
 hostname = %APPEND% *.kuwo.cn, *.lrts.me
-
 hostname = %APPEND% mb3admin.com
 
 
