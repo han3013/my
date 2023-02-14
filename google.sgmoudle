@@ -2,8 +2,7 @@
 #!desc=高级设置及通用的 URL 重定向优化（如 Google 搜索及地图、AbeamTV 区域限制等）
 
 [General]
-# > 跳过代理
-skip-proxy = %APPEND% passenger.t3go.cn, www.baidu.com, yunbusiness.ccb.com
+
 
 # > Always Real IP Hosts
 always-real-ip = %APPEND% *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.logon.battlenet.com.cn, *.logon.battle.net, stun.l.google.com
