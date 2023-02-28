@@ -1,5 +1,5 @@
-#!name=自用APP
-#!desc=Pa
+#!name=自用Panel
+#!desc=Panel
 [控制板]
 stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
 #显示当前网络信息
