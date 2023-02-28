@@ -1,6 +1,6 @@
-#!name=自用Panel
-#!desc=Panel
-[控制板]
+#!name=Panel
+#!desc=Bilibili&panel
+[Panel]
 stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
 #显示当前网络信息
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
