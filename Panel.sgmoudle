@@ -1,7 +1,6 @@
 #!name=自用APP
-#!desc=去广告加解锁
-
-[Panel]
+#!desc=Pa
+[控制板]
 stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
 #显示当前网络信息
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
