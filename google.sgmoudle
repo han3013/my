@@ -51,7 +51,6 @@ IP-CIDR,91.108.56.0/22,Telegram
 IP-CIDR,149.154.160.0/20,Telegram
 IP-CIDR,104.21.16.1/32,Telegram
 # ---- TikTok 国际版流量分流规则 ----
-# 按需修改后面的策略，例如 Proxy / DIRECT
 DOMAIN-SUFFIX,tiktokv.com,Tiktok
 DOMAIN-SUFFIX,byteoversea.com,Tiktok
 DOMAIN-SUFFIX,ibytedtos.com,Tiktok
