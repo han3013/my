@@ -43,13 +43,13 @@ DOMAIN-SUFFIX,tdesktop.com,Telegram
 DOMAIN-SUFFIX,telegra.ph,Telegram
 DOMAIN-SUFFIX,telegram.me,Telegram
 DOMAIN-SUFFIX,api.swiftgram.app,Telegram
-IP-CIDR,91.108.4.0/22,Telegram
-IP-CIDR,91.108.8.0/21,Telegram
-IP-CIDR,91.108.16.0/22,Telegram
-IP-CIDR,91.108.20.0/22,Telegram
-IP-CIDR,91.108.56.0/22,Telegram
-IP-CIDR,149.154.160.0/20,Telegram
-IP-CIDR,104.21.16.1/32,Telegram
+IP-CIDR,91.108.4.0/22,Telegram,no-resolve
+IP-CIDR,91.108.8.0/21,Telegram,no-resolve
+IP-CIDR,91.108.16.0/22,Telegram,no-resolve
+IP-CIDR,91.108.20.0/22,Telegram,no-resolve
+IP-CIDR,91.108.56.0/22,Telegram,no-resolve
+IP-CIDR,149.154.160.0/20,Telegram,no-resolve
+IP-CIDR,104.21.16.1/32,Telegram,no-resolve
 # ---- TikTok 国际版流量分流规则 ----
 DOMAIN-SUFFIX,tiktokv.com,Tiktok
 DOMAIN-SUFFIX,byteoversea.com,Tiktok
