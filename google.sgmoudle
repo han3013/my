@@ -2,7 +2,7 @@
 #!desc=YouTube/Spotify/google/Telegram/Tiktok
 #!author=Copilot
 #!system=ios
-
+#按需求自行更改策略组
 [Rule]
 # ===== 🌐 Google 全系 =====
 DOMAIN-SUFFIX,google.com,美国
