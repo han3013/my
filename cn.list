@@ -1,6 +1,4 @@
 #!name=国内分流/Apple
-#!desc=Apple
-[Rule]
 # Apple
 DOMAIN,developer.apple.com
 DOMAIN-SUFFIX,digicert.com
