@@ -1,0 +1,15 @@
+# OpenAI 主域名
+DOMAIN-SUFFIX,openai.com
+# API 域名
+DOMAIN,api.openai.com
+# 静态资源与登录相关域名
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,sentry.io
+# 一些可能用到的辅助域名
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+# 如果你是通过 Azure OpenAI 访问
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,azure.com
+
